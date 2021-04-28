@@ -14,12 +14,12 @@ namespace User_Reg
             Console.WriteLine("Welcome to USER-REGISTARTION");
 
             string pattern = "^[A-Z]{1,}[A-Za-z]{2,}"; //for first and last name 
-            string Epattern = "^[abc]*[@a-zA-Z].[com]*"; //for Email validation Pattern
+            string Epattern = "^([abc])+([.+-]?)([0-9]{0,})@([a-zA-Z]).([a-z]{3,})*.[a-zA-Z]"; //for Email validation Pattern
             string phPattern = "^[91][0-9]{10}"; //for Phone number
-            string passPattern = "^[A-Z]{1,}[A-Za-z0-9]{7,}"; //for password
+            string passPattern = "^[A-Z}{1,}[0-9]{1,}[a-z]{6,}$"; //for password
 
             //initializing variables
-            string firstName, lastName,eMail,phNumber,password;     
+            string firstName, lastName,eMail,phNumber,password;
 
             Console.WriteLine("Welcome to USER REgistration");
             //for First name
@@ -28,22 +28,22 @@ namespace User_Reg
             ValidName(firstName, pattern);
 
             //For last name 
-            Console.WriteLine("Enter your Name: ");
+            Console.WriteLine("Enter your Last Name : ");
             lastName = Console.ReadLine();
             ValidLastName(lastName, pattern);
 
             //for Email 
-            Console.WriteLine("Enter your Name: ");
+            Console.WriteLine("Enter your Email: ");
             eMail = Console.ReadLine();
             ValidEmail(eMail, Epattern);
 
             //for Phone number
-            Console.WriteLine("Enter your Name: ");
+            Console.WriteLine("Enter your Phone Number: ");
             phNumber = Console.ReadLine();
             PhnoneNumber(phNumber, phPattern);
 
             //for password
-            Console.WriteLine("Enter your Name: ");
+            Console.WriteLine("Enter your password: ");
             password = Console.ReadLine();
             Password(password, passPattern);
 
@@ -118,11 +118,11 @@ namespace User_Reg
                 bool result = regex.IsMatch(name);
                 if (result)
                 {
-                    Console.WriteLine("Valid Name---->" + name);
+                    Console.WriteLine("Valid ---->" + name);
                 }
                 else
                 {
-                    Console.WriteLine("InValid Name---->" + name);
+                    Console.WriteLine("InValid ---->" + name);
                 }
             
         }
