@@ -16,9 +16,10 @@ namespace User_Reg
             string pattern = "^[A-Z]{1,}[A-Za-z]{2,}"; //for first and last name 
             string Epattern = "^[abc]*[@a-zA-Z].[com]*"; //for Email validation Pattern
             string phPattern = "^[91][0-9]{10}"; //for Phone number
+            string passPattern = "^[A-Z]{1,}[A-Za-z0-9]{7,}";
 
             //initializing variables
-            string firstName, lastName,eMail,phNumber;     
+            string firstName, lastName,eMail,phNumber,password;     
 
             Console.WriteLine("Welcome to USER REgistration");
             //for First name
@@ -40,6 +41,12 @@ namespace User_Reg
             Console.WriteLine("Enter your Name: ");
             phNumber = Console.ReadLine();
             PhnoneNumber(phNumber, phPattern);
+
+            //for password
+            Console.WriteLine("Enter your Name: ");
+            password = Console.ReadLine();
+            Password(password, passPattern);
+
             Console.ReadLine();
         }
         /// <summary>
@@ -76,11 +83,28 @@ namespace User_Reg
             IterateLoop(name, pattern);
         }
 
+        /// <summary>
+        /// Phnones the number.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <param name="pattern">The pattern.</param>
         public static void PhnoneNumber(string name, string pattern)
         {
             Console.WriteLine("Validating....");
             IterateLoop(name, pattern);
         }
+
+        /// <summary>
+        /// Passwords the specified name.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <param name="pattern">The pattern.</param>
+        public static void Password(string name, string pattern)
+        {
+            Console.WriteLine("Validating....");
+            IterateLoop(name, pattern);
+        }
+
 
 
         /// <summary>
