@@ -16,7 +16,7 @@ namespace User_Reg
             string pattern = "^[A-Z]{1,}[A-Za-z]{2,}"; //for first and last name 
             string Epattern = "^([abc])+([.+-]?)([0-9]{0,})@([a-zA-Z]).([a-z]{3,})*.[a-zA-Z]"; //for Email validation Pattern
             string phPattern = "^[91][0-9]{10}"; //for Phone number
-            string passPattern = "^[A-Z}{1,}[0-9]{1,}[a-z]{6,}$"; //for password
+            string passPattern = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"; //for password
 
             //initializing variables
             string firstName, lastName,eMail,phNumber,password;
