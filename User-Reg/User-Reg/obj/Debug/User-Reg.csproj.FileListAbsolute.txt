@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\User-Registration1\User-Reg\User-Reg\bin\Debug\User-Reg.exe.config
+C:\Users\HP\source\repos\User-Registration1\User-Reg\User-Reg\bin\Debug\User-Reg.exe
+C:\Users\HP\source\repos\User-Registration1\User-Reg\User-Reg\bin\Debug\User-Reg.pdb
+C:\Users\HP\source\repos\User-Registration1\User-Reg\User-Reg\obj\Debug\User-Reg.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\User-Registration1\User-Reg\User-Reg\obj\Debug\User-Reg.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\User-Registration1\User-Reg\User-Reg\obj\Debug\User-Reg.exe
+C:\Users\HP\source\repos\User-Registration1\User-Reg\User-Reg\obj\Debug\User-Reg.pdb
