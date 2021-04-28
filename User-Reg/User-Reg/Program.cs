@@ -14,13 +14,18 @@ namespace User_Reg
             Console.WriteLine("Welcome to USER-REGISTARTION");
 
             string pattern = "^[A-Z]{1,}[A-Za-z]{2,}";
-            string firstName; 
+            string firstName, lastName; 
 
             Console.WriteLine("Welcome to USER REgistration");
 
             Console.WriteLine("Enter your Name: ");
             firstName = Console.ReadLine();
             ValidName(firstName, pattern);
+
+            Console.WriteLine("Enter your Name: ");
+            lastName = Console.ReadLine();
+            ValidLastName(lastName, pattern);
+
 
             Console.ReadLine();
         }
@@ -29,6 +34,13 @@ namespace User_Reg
             Console.WriteLine("Validating....");
             IterateLoop(name, pattern);
         }
+
+        public static void ValidLastName(string name, string pattern)
+        {
+            Console.WriteLine("Validating....");
+            IterateLoop(name, pattern);
+        }
+
         public static void IterateLoop(string name, string pattern)
         {
             Regex regex = new Regex(pattern);
