@@ -15,9 +15,10 @@ namespace User_Reg
 
             string pattern = "^[A-Z]{1,}[A-Za-z]{2,}"; //for first and last name 
             string Epattern = "^[abc]*[@a-zA-Z].[com]*"; //for Email validation Pattern
-            
+            string phPattern = "^[91][0-9]{10}"; //for Phone number
+
             //initializing variables
-            string firstName, lastName,eMail;     
+            string firstName, lastName,eMail,phNumber;     
 
             Console.WriteLine("Welcome to USER REgistration");
             //for First name
@@ -35,6 +36,10 @@ namespace User_Reg
             eMail = Console.ReadLine();
             ValidEmail(eMail, Epattern);
 
+            //for Phone number
+            Console.WriteLine("Enter your Name: ");
+            phNumber = Console.ReadLine();
+            PhnoneNumber(phNumber, phPattern);
             Console.ReadLine();
         }
         /// <summary>
@@ -70,6 +75,13 @@ namespace User_Reg
             Console.WriteLine("Validating....");
             IterateLoop(name, pattern);
         }
+
+        public static void PhnoneNumber(string name, string pattern)
+        {
+            Console.WriteLine("Validating....");
+            IterateLoop(name, pattern);
+        }
+
 
         /// <summary>
         /// Iterates the loop.
